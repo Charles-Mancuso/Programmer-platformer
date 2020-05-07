@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PC Computer - I Wanna Be The Guy - The Kid.png-173aff195410226ef4dd8f08b9239e64.stex"
+path="res://.import/PC Computer - I Wanna Be The Guy - The Kid.png-0666b3c24246506b4fa3f0cd2e6fa333.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/PC Computer - I Wanna Be The Guy - The Kid.png"
-dest_files=[ "res://.import/PC Computer - I Wanna Be The Guy - The Kid.png-173aff195410226ef4dd8f08b9239e64.stex" ]
+source_file="res://Sprites/Sprite Sheets/PC Computer - I Wanna Be The Guy - The Kid.png"
+dest_files=[ "res://.import/PC Computer - I Wanna Be The Guy - The Kid.png-0666b3c24246506b4fa3f0cd2e6fa333.stex" ]
 
 [params]
 
