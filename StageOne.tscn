@@ -1,8 +1,82 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://MainCharacter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Tiles/main_tile_.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 15.6758, 15.9987 )
 
 [node name="StageOne" type="Node2D"]
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 139.995, 89.7747 )
+[node name="MainTile" type="Sprite" parent="."]
+position = Vector2( 22.6882, 133.976 )
+scale = Vector2( 0.49763, 0.495641 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MainTile"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainTile/StaticBody2D"]
+position = Vector2( -0.355289, -0.525666 )
+shape = SubResource( 1 )
+
+[node name="MainTile2" type="Sprite" parent="."]
+position = Vector2( 38.1266, 133.978 )
+scale = Vector2( 0.49763, 0.495641 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MainTile2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainTile2/StaticBody2D"]
+position = Vector2( -0.355289, -0.525666 )
+shape = SubResource( 1 )
+
+[node name="MainTile3" type="Sprite" parent="."]
+position = Vector2( 53.4644, 133.975 )
+scale = Vector2( 0.49763, 0.495641 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MainTile3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainTile3/StaticBody2D"]
+position = Vector2( -0.355289, -0.525666 )
+shape = SubResource( 1 )
+
+[node name="MainTile4" type="Sprite" parent="."]
+position = Vector2( 69.0551, 133.984 )
+scale = Vector2( 0.49763, 0.495641 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MainTile4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainTile4/StaticBody2D"]
+position = Vector2( -0.355289, -0.525666 )
+shape = SubResource( 1 )
+
+[node name="MainTile5" type="Sprite" parent="."]
+position = Vector2( 84.5683, 133.974 )
+scale = Vector2( 0.49763, 0.495641 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MainTile5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainTile5/StaticBody2D"]
+position = Vector2( -0.355289, -0.525666 )
+shape = SubResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54.7773, 89.7965 )
